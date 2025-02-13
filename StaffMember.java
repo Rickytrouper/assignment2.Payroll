@@ -59,7 +59,6 @@ abstract class StaffMember {
     public void setHoursWorked(double hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
-
     // Public display method
     public void display() {
         System.out.println("First Name: " + firstName);

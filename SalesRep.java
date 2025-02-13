@@ -15,8 +15,7 @@ public class SalesRep extends StaffMember {
     // Parameterized constructor
     public SalesRep(String firstName, String lastName, String deptNumber, double hoursWorked, double allowance) {
         super(firstName, lastName, deptNumber, hoursWorked); // Call superclass constructor from teh parent class staffMember
-        this.allowance = allowance;
-    }
+        this.allowance = allowance;    }
 
     // Getter and Setter for allowance
     public double getAllowance() {
