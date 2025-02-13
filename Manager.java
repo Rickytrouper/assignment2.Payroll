@@ -4,7 +4,13 @@
 //Ricardo Wright - ID#2201010833
 
 public class Manager extends StaffMember {
-    private double bonus; // Bonus for the manager
+    private double bonus; //Declare Manager Bonus
+
+    // Default constructor
+    public Manager() {
+        super(); // default constructor of StaffMember
+        this.bonus = 0.0; // Default bonus
+    }
 
     // Parameterized constructor
     public Manager(String firstName, String lastName, String deptNumber, double hoursWorked, double bonus) {

@@ -9,6 +9,13 @@ abstract class StaffMember {
     protected String deptNumber; // Protected field
     protected double hoursWorked; // Protected field
 
+    // Default constructor
+    protected StaffMember() {
+        this.firstName = "";
+        this.lastName = "";
+        this.deptNumber = "";
+        this.hoursWorked = 0.0;
+    }
     // Parameterized constructor
     protected StaffMember(String firstName, String lastName, String deptNumber, double hoursWorked) {
         this.firstName = firstName;
