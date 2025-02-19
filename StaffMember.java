@@ -68,7 +68,6 @@ abstract class StaffMember {
     }
 
 
-
-
-
+    // Implement calculateSalary method
+    public abstract double calculateSalary();
 }

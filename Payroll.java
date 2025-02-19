@@ -1,4 +1,4 @@
-//Abbligale Ried - ID#2301010638
+//Abbligale Reid - ID#2301010638
 //Kwame Harriott - ID#2301011566
 //Shemoy Shay    - ID#2201011505
 //Ricardo Wright - ID#2201010833
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Payroll {
     public static void main(String[] args) {
 
-        // Instantiate a SalesRep staffMemeber object
+        // Instantiate a SalesRep staffMember object
         System.out.println("One Instance of a SalesRep staff Member ");
         SalesRep salesRep = new SalesRep("Ricardo", "Smith", "Acct1", 40, 500);
 
@@ -32,6 +32,18 @@ public class Payroll {
             rep.display();
 
        }
+        //Demonstrating Polymorphism
+        StaffMember manager = new Manager(7, "Adrian Brown", 57, 2000);
+        StaffMember SalesRep = new SalesRep(8, "James Roberts", 36, 1200);
+
+        System.out.println("Polymorphism Demonstration:");
+        manager.display();
+        System.out.println("Manager Salary: " + manager.calculateSalary());
+        System.out.println();
+        salesRep.display();
+        System.out.println("SalesRep Salary: " + salesRep.calculateSalary());
+        System.out.println();
     }
+
 
 }

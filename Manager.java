@@ -7,7 +7,7 @@ public class Manager extends StaffMember {
     private double bonus; //Declare Manager Bonus
 
     // Default constructor
-    public Manager() {
+    public Manager(int i, String adrianBrown, int i1, int i2) {
         super(); // default constructor of StaffMember
         this.bonus = 0.0; // Default bonus
     }
@@ -32,6 +32,11 @@ public class Manager extends StaffMember {
     public void display() {
         super.display(); // Call the display method from the superclass display
         System.out.println("Bonus: " + bonus); // Display the of the bonus
+    }
+    // Implement calculateSalary method
+    @Override
+    public double calculateSalary() {
+        return (getHoursWorked() * 2500) + bonus;
     }
 
 

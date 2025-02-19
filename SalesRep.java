@@ -7,7 +7,7 @@ public class SalesRep extends StaffMember {
     private double allowance; // Declare Sales Rep Allowance
 
     // Default constructor
-    public SalesRep() {
+    public SalesRep(int i, String jamesRoberts, int i1, int i2) {
         super(); // default constructor of StaffMember
         this.allowance = 0.0; // Default allowance
     }
@@ -32,7 +32,11 @@ public class SalesRep extends StaffMember {
         System.out.println("Allowance: " + allowance); // Display of the allowance
     }
 
-
+    // Implement calculateSalary method
+    @Override
+    public double calculateSalary() {
+        return (getHoursWorked() * 1500) + allowance;
+    }
 
 
 }
