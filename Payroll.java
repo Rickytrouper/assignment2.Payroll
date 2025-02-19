@@ -5,7 +5,6 @@
 
 import java.util.ArrayList;
 
-
 public class Payroll {
     public static void main(String[] args) {
 
@@ -36,6 +35,7 @@ public class Payroll {
         StaffMember manager = new Manager(7, "Adrian Brown", 57, 2000);
         StaffMember SalesRep = new SalesRep(8, "James Roberts", 36, 1200);
 
+        System.out.println();
         System.out.println("Polymorphism Demonstration:");
         manager.display();
         System.out.println("Manager Salary: " + manager.calculateSalary());
