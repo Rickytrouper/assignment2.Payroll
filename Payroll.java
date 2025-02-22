@@ -17,6 +17,7 @@ public class Payroll {
         // Invoke the display method to print a SalesRep StaffMember data values
         salesRep.display();
 
+
         System.out.println();
         System.out.println("Printing Array String of SalesRep Staff Members");
 
@@ -31,16 +32,32 @@ public class Payroll {
         for (SalesRep rep: salesReps) {
             System.out.println("*****************************");
             rep.display();
+            System.out.println("Salary: $" + rep.calculateSalary());
 
        }
+
+
+        // Instantiate a Manager staff member
+        System.out.println("\nOne Instance of a Manager:");
+        Manager manager = new Manager("Sophia", "Clark", "2010", 50, 2500);
+        manager.display();
+        //System.out.println("Manager Salary: $" + manager.calculateSalary());
+
+
         //Demonstrating Polymorphism
-        StaffMember manager = new Manager("Adrian", "Brown", "2009", 57, 2000);
+        StaffMember manager2 = new Manager("Adrian", "Brown", "2009", 57, 2000);
         StaffMember salesRep2 = new SalesRep("James", "Roberts", "2001",36, 1200);
+
+
 
         System.out.println();
         System.out.println("Polymorphism Demonstration:");
-        manager.display();
-        System.out.println("Manager Salary: " + manager.calculateSalary());
+        manager2.display();
+        System.out.println("Manager Salary: " + manager2.calculateSalary());
+        System.out.println();
+        salesRep2.display();
+        System.out.println("SalesRep Salary: $" + salesRep2.calculateSalary());
+
         System.out.println();
         salesRep.display();
         System.out.println("SalesRep Salary: " + salesRep.calculateSalary());
@@ -49,7 +66,7 @@ public class Payroll {
 
         // Store employees in a list
         ArrayList<StaffMember> employees = new ArrayList<>();
-        employees.add(manager);
+        employees.add(manager2);
         employees.add(salesRep);
         employees.add(salesRep2);
         employees.addAll(salesReps);

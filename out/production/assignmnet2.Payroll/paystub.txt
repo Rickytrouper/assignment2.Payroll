@@ -1,9 +1,45 @@
-Employee: Adrian Brown
-Employee: Ricardo Smith
-Employee: James Roberts
-Employee: Jessia Miller
-Employee: Calvin Street
-Employee: Kwamie Clarke
-Employee: Nicki Bell
-Employee: Hector Douglas
-Employee: Jessie Mills
+*****************************Employee: Adrian Brown
+Department: 2009
+Hours Worked: 57.0
+Salary: 144500.0
+--------------------------
+*****************************Employee: Ricardo Smith
+Department: Acct1
+Hours Worked: 40.0
+Salary: 60500.0
+--------------------------
+*****************************Employee: James Roberts
+Department: 2001
+Hours Worked: 36.0
+Salary: 55200.0
+--------------------------
+*****************************Employee: Jessia Miller
+Department: 1002
+Hours Worked: 45.0
+Salary: 73120.0
+--------------------------
+*****************************Employee: Calvin Street
+Department: 1052
+Hours Worked: 95.0
+Salary: 149120.0
+--------------------------
+*****************************Employee: Kwamie Clarke
+Department: 1006
+Hours Worked: 65.0
+Salary: 107120.0
+--------------------------
+*****************************Employee: Nicki Bell
+Department: 1006
+Hours Worked: 75.0
+Salary: 119120.0
+--------------------------
+*****************************Employee: Hector Douglas
+Department: 1002
+Hours Worked: 75.0
+Salary: 118120.0
+--------------------------
+*****************************Employee: Jessie Mills
+Department: 1056
+Hours Worked: 95.0
+Salary: 148120.0
+--------------------------
