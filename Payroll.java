@@ -62,18 +62,18 @@ public class Payroll {
             for (StaffMember employee : employees) {
                 if (employee == null) continue;
 
-                System.out.println("*****************************");
+                writer.write("*****************************");
                 //employee.display();
                 double salary = employee.calculateSalary();
                 //System.out.println("Salary: " + salary);
                 System.out.println();
 
                 // Write to paystub file
-                System.out.printf("Employee: " + employee.getFirstName() + " " + employee.getLastName() + "\n");
-                System.out.printf("Department: " + employee.getDeptNumber() + "\n");
-                System.out.printf("Hours Worked: " + employee.getHoursWorked() + "\n");
-                System.out.printf("Salary: " + salary + "\n");
-                System.out.printf("--------------------------\n");
+                writer.write("Employee: " + employee.getFirstName() + " " + employee.getLastName() + "\n");
+                writer.write("Department: " + employee.getDeptNumber() + "\n");
+                writer.write("Hours Worked: " + employee.getHoursWorked() + "\n");
+                writer.write("Salary: " + salary + "\n");
+                writer.write("--------------------------\n");
             }
             System.out.println("Paystub generated successfully!");
         } catch (IOException e) {
