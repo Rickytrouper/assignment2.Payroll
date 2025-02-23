@@ -54,6 +54,8 @@ public class Payroll {
         ArrayList<StaffMember> employees = new ArrayList<>();
         employees.add(manager);
         employees.add(salesRep);
+        employees.add(salesRep2);
+        employees.addAll(salesReps);
 
         // Display salaries and generate paystub
         generatePaystub(employees);
