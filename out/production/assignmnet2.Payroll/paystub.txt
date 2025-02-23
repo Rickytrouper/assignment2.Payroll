@@ -1,9 +1,12 @@
 Employee: Adrian Brown
+Position: Manager
+Department: 2009
+Hours Worked: 57.0
+Salary: 144500.0
+--------------------------
 Employee: Ricardo Smith
-Employee: James Roberts
-Employee: Jessia Miller
-Employee: Calvin Street
-Employee: Kwamie Clarke
-Employee: Nicki Bell
-Employee: Hector Douglas
-Employee: Jessie Mills
+Position: Sales Representative
+Department: 0231
+Hours Worked: 40.0
+Salary: 60500.0
+--------------------------

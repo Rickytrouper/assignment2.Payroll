@@ -1,0 +1,12 @@
+Employee: Adrian Brown
+Position: Manager
+Department: 2009
+Hours Worked: 57.0
+Salary: 144500.0
+--------------------------
+Employee: Ricardo Smith
+Position: Sales Representative
+Department: 0231
+Hours Worked: 40.0
+Salary: 60500.0
+--------------------------

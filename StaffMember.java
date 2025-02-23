@@ -10,12 +10,10 @@ abstract class StaffMember {
     protected double hoursWorked; // Protected field
 
     // Default constructor
-    protected StaffMember() {
-        this.firstName = "";
-        this.lastName = "";
-        this.deptNumber = "";
-        this.hoursWorked = 0.0;
+    protected StaffMember()  {
+        this("", "", "", 0.0);
     }
+
     // Parameterized constructor
     protected StaffMember(String firstName, String lastName, String deptNumber, double hoursWorked) {
         this.firstName = firstName;
@@ -66,7 +64,6 @@ abstract class StaffMember {
         System.out.println("Department Number: " + deptNumber);
         System.out.println("Hours Worked: " + hoursWorked);
     }
-
 
     // Implement calculateSalary method
     public abstract double calculateSalary();

@@ -12,7 +12,8 @@ public class Payroll {
 
         // Instantiate a SalesRep staffMember object
         System.out.println("One Instance of a SalesRep staff Member ");
-        SalesRep salesRep = new SalesRep("Ricardo", "Smith", "Acct1", 40, 500);
+        System.out.println("*****************************");
+        SalesRep salesRep = new SalesRep("Ricardo", "Smith", "0231", 40, 500);
 
         // Invoke the display method to print a SalesRep StaffMember data values
         salesRep.display();
@@ -39,20 +40,20 @@ public class Payroll {
 
         System.out.println();
         System.out.println("Polymorphism Demonstration:");
+        System.out.println("*****************************");
         manager.display();
         System.out.println("Manager Salary: " + manager.calculateSalary());
         System.out.println();
+        System.out.println("*****************************");
         salesRep.display();
         System.out.println("SalesRep Salary: " + salesRep.calculateSalary());
         System.out.println();
 
 
-        // Store employees in a list
+        // List of employees paystub to be generated
         ArrayList<StaffMember> employees = new ArrayList<>();
         employees.add(manager);
         employees.add(salesRep);
-        employees.add(salesRep2);
-        employees.addAll(salesReps);
 
         // Display salaries and generate paystub
         generatePaystub(employees);
@@ -62,20 +63,19 @@ public class Payroll {
             for (StaffMember employee : employees) {
                 if (employee == null) continue;
 
-                System.out.println("*****************************");
-                //employee.display();
                 double salary = employee.calculateSalary();
-                //System.out.println("Salary: " + salary);
-                System.out.println();
 
                 // Write to paystub file
-                System.out.printf("Employee: " + employee.getFirstName() + " " + employee.getLastName() + "\n");
-                System.out.printf("Department: " + employee.getDeptNumber() + "\n");
-                System.out.printf("Hours Worked: " + employee.getHoursWorked() + "\n");
-                System.out.printf("Salary: " + salary + "\n");
-                System.out.printf("--------------------------\n");
+                writer.write("Employee: " + employee.getFirstName() + " " + employee.getLastName() + "\n");
+                writer.write("Position: " + (employee instanceof Manager ? "Manager" : "Sales Representative") + "\n");
+                writer.write("Department: " + employee.getDeptNumber() + "\n");
+                writer.write("Hours Worked: " + employee.getHoursWorked() + "\n");
+                writer.write("Salary: " + salary + "\n");
+                writer.write("--------------------------\n");
             }
+            System.out.println("*****************************");
             System.out.println("Paystub generated successfully!");
+            System.out.println("*****************************");
         } catch (IOException e) {
             System.out.println("Error writing paystub file: " + e.getMessage());
         }
