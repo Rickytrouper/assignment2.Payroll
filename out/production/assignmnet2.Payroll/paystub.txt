@@ -2,53 +2,53 @@ Employee: Adrian Brown
 Position: Manager
 Department: 2009
 Hours Worked: 57.0
-Salary: 144500.0
+Salary: $144,500.00
 --------------------------
 Employee: Ricardo Smith
 Position: Sales Representative
 Department: 0231
 Hours Worked: 40.0
-Salary: 60500.0
+Salary: $60,500.00
 --------------------------
 Employee: James Roberts
 Position: Sales Representative
 Department: 2001
 Hours Worked: 36.0
-Salary: 55200.0
+Salary: $55,200.00
 --------------------------
 Employee: Jessia Miller
 Position: Sales Representative
 Department: 1002
 Hours Worked: 45.0
-Salary: 73120.0
+Salary: $73,120.00
 --------------------------
 Employee: Calvin Street
 Position: Sales Representative
 Department: 1052
 Hours Worked: 95.0
-Salary: 149120.0
+Salary: $149,120.00
 --------------------------
 Employee: Kwamie Clarke
 Position: Sales Representative
 Department: 1006
 Hours Worked: 65.0
-Salary: 107120.0
+Salary: $107,120.00
 --------------------------
 Employee: Nicki Bell
 Position: Sales Representative
 Department: 1006
 Hours Worked: 75.0
-Salary: 119120.0
+Salary: $119,120.00
 --------------------------
 Employee: Hector Douglas
 Position: Sales Representative
 Department: 1002
 Hours Worked: 75.0
-Salary: 118120.0
+Salary: $118,120.00
 --------------------------
 Employee: Jessie Mills
 Position: Sales Representative
 Department: 1056
 Hours Worked: 95.0
-Salary: 148120.0
+Salary: $148,120.00
 --------------------------

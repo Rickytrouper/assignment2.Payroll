@@ -46,8 +46,8 @@ public class Payroll {
         System.out.println("Manager Salary: " + manager.calculateSalary());
         System.out.println();
         System.out.println("*****************************");
-        salesRep.display();
-        System.out.println("SalesRep Salary: " + salesRep.calculateSalary());
+        salesRep2.display();
+        System.out.println("SalesRep Salary: " + salesRep2.calculateSalary());
         System.out.println();
 
 
