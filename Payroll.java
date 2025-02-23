@@ -6,6 +6,7 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.text.NumberFormat;
 
 public class Payroll {
     public static void main(String[] args) {
@@ -66,13 +67,15 @@ public class Payroll {
                 if (employee == null) continue;
 
                 double salary = employee.calculateSalary();
+                NumberFormat currencyFormat = NumberFormat.getCurrencyInstance();
+                String formattedSalary = currencyFormat.format(salary);
 
                 // Write to paystub file
                 writer.write("Employee: " + employee.getFirstName() + " " + employee.getLastName() + "\n");
                 writer.write("Position: " + (employee instanceof Manager ? "Manager" : "Sales Representative") + "\n");
                 writer.write("Department: " + employee.getDeptNumber() + "\n");
                 writer.write("Hours Worked: " + employee.getHoursWorked() + "\n");
-                writer.write("Salary: " + salary + "\n");
+                writer.write("Salary: " + formattedSalary + "\n");
                 writer.write("--------------------------\n");
             }
             System.out.println("*****************************");
